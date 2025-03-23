@@ -1,1 +1,1 @@
-Link -> https://krishnendudey167.github.io/India-Mirror/
+Just a project
