@@ -1,1 +1,14 @@
-<%- include("partials/header.ejs") %>
+<%- include("partials/header.ejs") %> 
+
+<!-- displaying all posts -->
+<% if(allPosts.length > 0) { %> 
+    <% allPosts.forEach(element => { %> 
+        <h3><%= element.title %></h3>
+        <p><%= element.content %></p>
+    <% }); %>
+<% } %>
+
+<!-- New post button -->
+<input type="button" onclick="location.href='/new';" value="New Post" />
+
+<%- include("partials/footer.ejs") %>
